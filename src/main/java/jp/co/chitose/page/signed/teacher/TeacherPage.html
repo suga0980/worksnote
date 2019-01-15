@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html xmlns:wicket="http://wicket.apache.org">
+<head>
+    <meta charset="UTF-8">
+    <title>教員ホーム | 業績管理システム</title>
+</head>
+<body>
+<header wicket:id="headerPanel">
+</header>
+<p>
+    <span wicket:id="prevMonthLink">  ◀  </span>
+    <span wicket:id="month"></span>月
+    <span wicket:id="nextMonthLink">  ▶  </span>
+</p>
+<table>
+    <tr wicket:id="calendar">
+        <td wicket:id="week">
+            <a wicket:id="toViewDailyWorks">
+                <span wicket:id="dayLabel"></span>
+            </a>
+            <ul></ul>
+        </td>
+    </tr>
+</table>
+<p>
+    <a wicket:id="toAddUpWork"><span wicket:id="realName"></span>さんの業績を集計する</a>
+</p>
+</body>
+</html>

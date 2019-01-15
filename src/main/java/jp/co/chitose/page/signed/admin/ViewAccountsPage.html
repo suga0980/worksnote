@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html xmlns:wicket="http://wicket.apache.org">
+<head>
+    <meta charset="UTF-8">
+    <title>アカウント一覧 | 業績管理システム</title>
+</head>
+<body>
+<header wicket:id="headerPanel">
+</header>
+<h1>編集するアカウントを選択</h1>
+<table>
+    <tr>
+        <td>管理者</td>
+        <td>事務員</td>
+        <td>教員</td>
+    </tr>
+    <th>
+        <dd wicket:id="admin">
+            <a wicket:id="toEditAccount">
+                <span wicket:id="realName"></span>
+            </a>
+        </dd>
+    </th>
+    <th>
+        <dd wicket:id="stuff">
+            <a wicket:id="toEditAccount">
+                <span wicket:id="realName"></span>
+            </a>
+        </dd>
+    </th>
+    <th>
+        <dd wicket:id="teacher">
+            <a wicket:id="toEditAccount">
+                <span wicket:id="realName"></span>
+            </a>
+        </dd>
+    </th>
+</table>
+<p><a wicket:id="toAdmin">ホームに戻る</a></p>
+</body>
+</html>

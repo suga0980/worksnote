@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html xmlns:wicket="http://wicket.apache.org">
+<head>
+    <meta charset="UTF-8">
+    <title>業績の登録を完了 | 業績管理システム</title>
+</head>
+<body>
+<header wicket:id="headerPanel">
+</header>
+<h1>以下の内容で登録しました。</h1>
+<p>
+    タイトル : <span wicket:id="title"></span><br>
+    日付 : <span wicket:id="date"></span><br>
+    種類 : <span wicket:id="type"></span><br>
+    種類の詳細 : <span wicket:id="moreType"></span><br>
+    備考 : <span wicket:id="memo"></span><br>
+</p>
+<a wicket:id="toWorkRegister">更に業績を登録する</a><br>
+<a wicket:id="toViewDailyWorks"><span wicket:id="workDate"></span>の業績を見る</a><br>
+<a wicket:id="toHome">ホームに戻る</a>
+</body>
+</html>

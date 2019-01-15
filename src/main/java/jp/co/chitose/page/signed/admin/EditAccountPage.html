@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html xmlns:wicket="http://wicket.apache.org">
+<head>
+    <meta charset="UTF-8">
+    <title>アカウントを編集 | 業績管理システム</title>
+</head>
+<body>
+<form wicket:id="signUpForm">
+    ユーザ名<br>
+    <input type="text" wicket:id="accountName" /><br>
+    メールアドレス<br>
+    <input type="email" wicket:id="mailAddress" /><br>
+    パスワード<br>
+    <input type="password" wicket:id="password" /><br>
+    業種<br>
+    <select wicket:id="role" /><br>
+    本名<br>
+    <input type="text" wicket:id="realName" /><br>
+    ふりがな<br>
+    <input type="text" wicket:id="realNameRuby" /><br>
+    <br>
+    <button type="submit">送信</button>
+</form>
+<p><a wicket:id="toViewAccounts">保存せずに戻る</a></p>
+<p><a wicket:id="toDeleteAccount">このアカウントを削除する</a></p>
+</body>
+</html>

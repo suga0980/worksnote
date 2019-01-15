@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html xmlns:wicket="http://wicket.apache.org">
+<head>
+    <meta charset="UTF-8">
+    <title>業績を登録する | 業績管理システム</title>
+</head>
+<body>
+<header wicket:id="headerPanel">
+</header>
+<h1>業績の情報を入力</h1>
+<form wicket:id="registerWorkForm">
+    タイトル<br>
+    <input type="text" wicket:id="title" /><br>
+    日付<br>
+    <input type="text" wicket:id="year" /> 年 <input type="text" wicket:id="month" /> 月 <input type="text" wicket:id="day" /> 日<br>
+    種類<br>
+    <select wicket:id="type"></select><br>
+    種類の詳細<br>
+    <select wicket:id="moreType"></select><br>
+    ファイル<br>
+    <input type="file" wicket:id="file" /><br>
+    アップロードしたファイル一覧
+    <ul>
+        <li></li>
+    </ul>
+    備考<br>
+    <input type="text" wicket:id="memo" /><br>
+    <br>
+    <button type="submit">登録</button>
+</form>
+</body>
+</html>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html xmlns:wicket="http://wicket.apache.org">
+<head>
+    <meta charset="UTF-8">
+    <title>アカウントの作成の完了 | 業績管理システム</title>
+</head>
+<body>
+<header wicket:id="headerPanel">
+</header>
+<h1>以下の内容で登録しました</h1>
+<p>
+    ユーザ名 : <span wicket:id="name"></span><br>
+    メールアドレス : <span wicket:id="mailAddress"></span><br>
+    業種 : <span wicket:id="role"></span><br>
+    本名 : <span wicket:id="realName"></span><br>
+    ふりがな : <span wicket:id="realNameRuby"></span>
+</p>
+<a wicket:id="toMakeAccount">更に作成する</a><br>
+<a wicket:id="toViewAccounts">アカウント一覧</a><br>
+<a wicket:id="toAdmin">ホーム</a>
+</body>
+</html>

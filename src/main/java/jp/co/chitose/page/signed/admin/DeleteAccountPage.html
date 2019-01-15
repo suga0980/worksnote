@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html xmlns:wicket="http://wicket.apache.org">
+<head>
+    <meta charset="UTF-8">
+    <title>アカウントの削除内容の確認 | 業績管理システム</title>
+</head>
+<body>
+<h1>以下の内容が削除されます</h1>
+<p>
+    アカウント名 : <span wicket:id="accountName"></span><br>
+    業種 : <span wicket:id="role"></span><br>
+    メールアドレス : <span wicket:id="mailAddress"></span><br>
+    本名 : <span wicket:id="realName"></span><br>
+    ふりがな : <span wicket:id="realNameRuby"></span><br>
+    <span wicket:id="workCount"></span>件の業績情報<br>
+    <br>
+    <a wicket:id="toViewAccounts">アカウント一覧に戻る</a><br>
+    <a wicket:id="toDeleteAccountComp">アカウントを削除</a><br>
+</p>
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html xmlns:wicket="http://wicket.apache.org">
+<head>
+    <meta charset="UTF-8">
+    <title>一日の業績の閲覧 | 業績管理システム</title>
+</head>
+<body>
+<header wicket:id="headerPanel">
+</header>
+<p><a wicket:id="toRegisterWork">業績を登録する</a></p>
+<p><span wicket:id="date"></span>の業績</p>
+<ul wicket:id="dailyWorks">
+    <li>
+        <a wicket:id="toWorkUpdate">
+            <span wicket:id="title"></span>
+        </a>
+    </li>
+    <li>
+        <span wicket:id="types"></span>
+    </li>
+    <li>
+        <span wicket:id="memo"></span>
+    </li>
+</ul>
+<p><a wicket:id="toCalendar">カレンダーに戻る</a></p>
+</body>
+</html>
