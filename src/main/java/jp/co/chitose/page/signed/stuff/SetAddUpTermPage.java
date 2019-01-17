@@ -48,7 +48,7 @@ public class SetAddUpTermPage extends WebPage {
                 LocalDate bDate = LocalDate.of(bYear, bMonth, bDay);
                 LocalDate aDate = LocalDate.of(aYear, aMonth, aDay);
                 List<Work> works = new ArrayList<>();
-                while (bDate.toString().equals(aDate.toString())) {
+                while (!bDate.equals(aDate)) {
                     List<Work> w = workService.getDailyWorks(accountId, bDate);
                     for (Work work : w) {
                         works.add(work);
